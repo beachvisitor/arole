@@ -1,0 +1,29 @@
+{
+  "name": "arole",
+  "description": "Control input events in Node.js.",
+  "keywords": [
+    "arole",
+    "control",
+    "simulate",
+    "mouse",
+    "touch",
+    "keyboard",
+    "input",
+    "events"
+  ],
+  "license": "MIT",
+  "author": "normalped",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/beachvisitor/arole"
+  },
+  "scripts": {
+    "build": "node-gyp configure && node-gyp build",
+    "dev": "node src/dev.js"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0"
+  }
+}

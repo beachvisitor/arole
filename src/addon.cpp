@@ -142,8 +142,8 @@ namespace control {
 			static void process(unsigned char key, unsigned char flag) {
 				INPUT input;
 				input.type = INPUT_KEYBOARD;
-				input.ki.wScan = key;
-				input.ki.dwFlags = flag | KEYEVENTF_SCANCODE;
+				input.ki.wVk = key;
+				input.ki.dwFlags = flag;
 				SendInput(1, &input, sizeof(INPUT));
 			}
 	};
